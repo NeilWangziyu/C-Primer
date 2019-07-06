@@ -1,0 +1,8 @@
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/CMakeFiles/rebuild_cache.dir
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/CMakeFiles/edit_cache.dir
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/CMakeFiles/test.dir
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/CMakeFiles/Demo.dir
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/math/CMakeFiles/rebuild_cache.dir
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/math/CMakeFiles/edit_cache.dir
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/math/CMakeFiles/test.dir
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo5/math/CMakeFiles/MathFunctions.dir

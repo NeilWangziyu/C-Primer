@@ -79,5 +79,12 @@ int main(int argc, const char * argv[]) {
     p = &bulk;
     Quota &r = bulk;
     // 派生到基类的类型转换
+    
+    cout << "-----" << endl;
+    Quota base("0-201-8274", 50);
+    print_total(cout, base, 10);
+    Bulk_quota derived("0-201-8274", 50, 5, 0.19);
+    print_total(cout, derived, 10);
+    
     return 0;
 }

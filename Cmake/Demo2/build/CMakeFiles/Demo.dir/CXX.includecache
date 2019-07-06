@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo2/MathFunctions.cc
+MathFunctions.h
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo2/MathFunctions.h
+
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo2/MathFunctions.h
+
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo2/main.cc
+stdio.h
+-
+stdlib.h
+-
+MathFunctions.h
+/Users/ziyu/Documents/Xcode/C-Primer/Cmake/Demo2/MathFunctions.h
+

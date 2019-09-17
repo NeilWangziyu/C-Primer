@@ -7,7 +7,8 @@
 //
 
 #include <iostream>
-
+#include <string>
+using namespace std;
 void ReplaceBlank(char string[], int length)
 {
     if (string == nullptr || length <= 0) {
@@ -25,6 +26,8 @@ void ReplaceBlank(char string[], int length)
     }
     
     int newLength = originalLength + numberOfBlank*2;
+    
+    cout << "newLength: " << newLength << endl;
     if (newLength > length) {
         return;
     }
@@ -48,6 +51,12 @@ void ReplaceBlank(char string[], int length)
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    
+    
+    char input[14] = {'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'd', '\0'};
+    cout << sizeof(input) << endl;;
+    ReplaceBlank(input, 11);
+    cout << input  << endl;
     
     
     return 0;

@@ -74,6 +74,35 @@ void quickSort(vector<int>& arr, int left, int right)
     }
 }
 
+void min_heapify(vector<int> &arr, int start, int end)
+{
+//    end:index
+    int parent = start;
+    int son = parent * 2 + 1;
+    while (son <= end) {
+        if (son + 1 <= end && arr[son] > arr[son+1]) {
+            son += 1;
+        }
+        if (arr[parent] < arr[son]) {
+            return;
+        }
+        swap(arr[parent], arr[son]);
+        parent = son;
+        son = parent * 2 + 1;
+    }
+    return;
+}
+void heap_sort_min_heap(vector<int> &arr, int len)
+{
+    for (int i = len / 2 - 1; i >=0 ; i --) {
+        min_heapify(arr, i, len - 1);
+    }
+    for (int i = len - 1; i > 0; i -- ) {
+        swap(arr[0], arr[i]);
+        min_heapify(arr, 0, i - 1);
+    }
+}
+
 
 
 int main(int argc, const char * argv[]) {
@@ -94,5 +123,16 @@ int main(int argc, const char * argv[]) {
     for (int items : arr2) {
         cout << items << endl;
     }
+    
+    cout << "min_heap" <<endl;
+    vector<int> arr3 = {11,1,2,3,4,5,6};
+    heap_sort_min_heap(arr3, arr3.size());
+
+    for (int items : arr3) {
+        cout << items << endl;
+    }
+    
+
+    
     return 0;
 }

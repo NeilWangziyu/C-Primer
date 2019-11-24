@@ -23,7 +23,7 @@ public:
     CStudentMg addAStu();
     
     
-}
+};
 
 
 #endif /* CStudentMg_hpp */
